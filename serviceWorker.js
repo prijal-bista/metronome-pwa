@@ -19,15 +19,15 @@ self.addEventListener('install', (installEvent) => {
 self.addEventListener('fetch', (fetchEvent) => {
   // network first approach
   fetchEvent.respondWith(
-    fetch(fetchEvent.request).catch(function () {
-      return caches.match(fetchEvent.request);
-    })
+    fetch(fetchEvent.request)
+      .then((res) => {
+        return caches.open(metronomeCache).then(function (cache) {
+          cache.put(fetchEvent.request.url, res.clone());
+          return res;
+        });
+      })
+      .catch(function () {
+        return caches.match(fetchEvent.request);
+      })
   );
-
-  // cache first approach
-  // fetchEvent.respondWith(
-  //   caches.match(fetchEvent.request).then((res) => {
-  //     return res || fetch(fetchEvent.request);
-  //   })
-  // );
 });

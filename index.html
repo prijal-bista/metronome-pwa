@@ -39,17 +39,19 @@
       <small class="caption">bpm</small>
     </div>
 
-    <div class="debug py-1">
-      <button
-        class="border-radius-8"
-        id="clear-old-cache"
-        onclick="clearOldCache()"
-      >
-        Get new update
-      </button>
-    </div>
-
     <script src="metronome.js"></script>
     <script src="script.js"></script>
+
+    <script>
+      // service worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker
+            .register('serviceWorker.js')
+            .then((res) => console.log('Service worker registered', res))
+            .catch((err) => console.log('Service worker not registered', err));
+        });
+      }
+    </script>
   </body>
 </html>
