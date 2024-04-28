@@ -1,16 +1,25 @@
 {
-  "name": "Metronome",
-  "short_name": "Metronome",
-  "start_url": "index.html",
-  "display": "standalone",
-  "background_color": "#5c8374",
   "theme_color": "#5c8374",
-  "orientation": "portrait-primary",
+  "background_color": "#5c8374",
   "icons": [
     {
-      "src": "/metronome.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "icon512_maskable.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "icon512_rounded.png",
+      "type": "image/png"
     }
-  ]
+  ],
+  "orientation": "any",
+  "display": "standalone",
+  "dir": "auto",
+  "lang": "en-US",
+  "name": "Metronome (PWA)",
+  "short_name": "metronome",
+  "start_url": "https://prijal-bista.github.io/metronome-pwa/"
 }
