@@ -20,6 +20,6 @@
   "dir": "auto",
   "lang": "en-US",
   "name": "Metronome (PWA)",
-  "short_name": "metronome",
+  "short_name": "Metronome",
   "start_url": "https://prijal-bista.github.io/metronome-pwa/"
 }
