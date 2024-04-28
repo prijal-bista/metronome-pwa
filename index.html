@@ -30,13 +30,24 @@
       <h3>Metronome</h3>
       <p class="caption"><small> Progress Web App (PWA)</small></p>
     </div>
+
+    <br />
+
     <button class="play-btn" id="play-btn" onclick="metronomeToggleStartStop()">
       <div class="play"></div>
     </button>
 
+    <br />
+
     <div class="set-bpm py-1">
+      <p class="caption text-center pb-1">Tempo (BPM)</p>
       <input class="bpm-input" id="bpm" type="number" value="90" />
-      <small class="caption">bpm</small>
+    </div>
+
+    <div>
+      <button onclick="updateBpm('dec')">-</button>
+      <input class="interval-input" id="interval" type="number" value="5" />
+      <button onclick="updateBpm('inc')">+</button>
     </div>
 
     <script src="metronome.js"></script>
