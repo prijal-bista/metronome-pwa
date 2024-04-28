@@ -1,5 +1,5 @@
 <h3 align="center">
-Metronome Progressive Web App (PWA)
+Metronome Progressive Web App (PWA) [Works offline]
 </h3>
 
 <p align="center">
@@ -12,7 +12,7 @@ A simple metronome web app which also works offline.
 
 Motivation:
 
-> I Needed a metronome for my practice but did not have enough storage in my mobile to install an app for it. So, went ahead and built a lightweight pwa so that i can easily install it and use whenever i want, even when offline :)
+> I Needed a metronome for my practice but did not have enough storage in my mobile to install an app for it. So, went ahead and built a lightweight pwa so that i can easily install it and use whenever i want, especially when offline :)
 
 Features:
 
