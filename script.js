@@ -2,7 +2,7 @@ let bpmInput = document.getElementById('bpm');
 let intervalInput = document.getElementById('interval');
 let playBtnDiv = document.querySelector('#play-btn>div');
 
-var metronome = new Metronome();
+var metronome = new Metronome(90);
 
 const metronomeToggleStartStop = () => {
   if (metronome.isRunning) {
