@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Simple metronome progressive web app. Works offline."
+    />
+    <meta
+      name="keywords"
+      content="metronome, offline, webapp, metronome progressive web app"
+    />
+    <meta name="author" content="Prijal Bista" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="metronome.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#5c8374" />
+    <meta name="theme-color" content="#5c8374" />
+    <link rel="manifest" href="manifest.json" />
+
+    <title>Metronome PWA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <img src="metronome.png" alt="metronome" width="50px" />
+    </div>
+    <div class="heading py-1 text-center">
+      <h3>Metronome</h3>
+      <p class="caption"><small> Progress Web App (PWA)</small></p>
+    </div>
+    <button class="play-btn" id="play-btn" onclick="metronomeToggleStartStop()">
+      <div class="play"></div>
+    </button>
+
+    <div class="set-bpm py-1">
+      <input class="bpm-input" id="bpm" type="number" value="90" />
+      <small class="caption">bpm</small>
+    </div>
+
+    <div class="debug py-1">
+      <button
+        class="border-radius-8"
+        id="clear-old-cache"
+        onclick="clearOldCache()"
+      >
+        Get new update
+      </button>
+    </div>
+
+    <script src="metronome.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

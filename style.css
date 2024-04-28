@@ -1,0 +1,105 @@
+:root {
+  /* light theme colors */
+  --grey: #bdbec2;
+  --darkgrey: #cfcfcf;
+  --darkgrey2: rgb(82, 79, 79);
+  --black: #000;
+
+  /* dark theme colors */
+  --darkblue: #040d12;
+  --darkgreen: #183d3d;
+  --teal: #5c8374;
+  --lightteal: #93b1a6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--grey);
+  background-color: var(--darkblue);
+}
+
+button {
+  padding: 8px;
+  border: none;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-color: var(--darkgreen);
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.play-btn {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 50px solid var(--grey);
+  margin-left: 15px;
+}
+
+.pause {
+  width: 15px;
+  height: 60px;
+  border: none;
+  border-left: 15px solid var(--grey);
+  border-right: 15px solid var(--grey);
+}
+
+.caption {
+  color: var(--lightteal);
+  font-size: 14px;
+}
+
+input.bpm-input {
+  background: var(--darkgreen);
+  color: var(--grey);
+  font-size: 20px;
+  width: 80px;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+/* utility classes*/
+
+.py-1 {
+  padding: 8px 0;
+}
+
+.pb-1 {
+  padding-bottom: 8px;
+}
+.text-center {
+  text-align: center;
+}
+
+.border-radius-8 {
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+}
+
+/* end utility classes*/
